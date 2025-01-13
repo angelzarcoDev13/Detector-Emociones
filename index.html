@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detección de Emociones By Zarco</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Emotions IA By Zarco</h1>
+    <form id="upload-form">
+      <input type="file" id="image-input" accept="image/*" required>
+      <button type="submit" class="btn-primary">Procesar Imagen</button>
+    </form>
+    <div id="results">
+      <h2>Resultados:</h2>
+      <p id="emotion-result"></p>
+      <p id="drive-id"></p>
+      <img id="processed-image" alt="Imagen procesada" style="display: none;">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

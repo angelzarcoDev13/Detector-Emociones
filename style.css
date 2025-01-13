@@ -1,0 +1,95 @@
+/* Fondo dinámico (apagar y prender) */
+body {
+  background-color: #ff0000;
+  animation: fadeInOut 3s ease-in-out infinite;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeInOut {
+  0% {
+    background-color: #ff0000; /* Rojo brillante */
+    opacity: 1;
+  }
+  50% {
+    background-color: #660000; /* Rojo oscuro, apagado */
+    opacity: 0.5;
+  }
+  100% {
+    background-color: #ff0000; /* Vuelve al rojo brillante */
+    opacity: 1;
+  }
+}
+
+/* Estilo de contenedor */
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Estilo de encabezado */
+h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo de formulario */
+form {
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  width: 70%;
+  background-color: #f9f9f9;
+}
+
+input[type="file"]:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+/* Estilo de botones */
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #2575fc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e5dbf;
+}
+
+/* Estilo de resultados */
+#results {
+  margin-top: 30px;
+  text-align: left;
+}
+
+#results h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#processed-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
